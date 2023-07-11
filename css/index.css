@@ -186,6 +186,9 @@ body {
   font-style: italic;
 }
 
+header {
+  padding-top: 10rem;
+}
 header h1,
 header h2 {
   font-size: 8rem;
@@ -222,6 +225,12 @@ header h2 {
 .details .list-item + .list-item {
   margin-top: 8px;
 }
+.details .wrap:not(:first-child) .list-item + .list-item {
+  margin-top: 16px;
+}
+.details .wrap:nth-child(4) .list-item + .list-item {
+  margin-top: 12px;
+}
 
 footer {
   background: #000;
@@ -231,6 +240,6 @@ footer .wrap {
   padding-bottom: 4rem;
   text-align: center;
 }
-footer .wrap img + img {
+footer .wrap a + a {
   margin-left: 40px;
 }/*# sourceMappingURL=index.css.map */
