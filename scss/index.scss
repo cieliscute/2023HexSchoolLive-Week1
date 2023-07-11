@@ -1,0 +1,94 @@
+@import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Castoro&display=swap");
+
+* {
+    box-sizing: border-box;
+    outline: 1px solid red;
+}
+body {
+    font-family: "Castoro", serif;
+    line-height: 1.5;
+}
+.l-container {
+    width: 1296px;
+    margin: auto;
+    > * {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+.l-center {
+    text-align: center;
+}
+.l-offset50 {
+    position: relative;
+    width: 50%;
+    transform: translate(100%, 0%);
+}
+.l-offset0 {
+    width: 50%;
+}
+.fs-32 {
+    font-size: 32px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.timeline {
+    color: #949494;
+    font-size: 20px;
+    font-style: italic;
+}
+header {
+    h1,
+    h2 {
+        font-size: 8rem;
+        line-height: 12rem;
+        letter-spacing: 0.96rem;
+    }
+}
+.about {
+    background: #efefef;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.details {
+    .wrap + .wrap {
+        margin-top: 2.5rem;
+    }
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+    .title {
+        color: #ae0000;
+        font-size: 40px;
+        border-bottom: 3px solid #ae0000;
+        margin-bottom: 16px;
+    }
+    .list-item {
+        a:link,
+        a:visited {
+            color: #000;
+        }
+        a:hover {
+            color: lighten(#000000, 30%);
+        }
+        & + .list-item {
+            margin-top: 8px;
+        }
+    }
+}
+footer{
+    background: #000;
+    .wrap{
+        padding-top: 4rem;
+        padding-bottom:4rem ;
+        text-align: center;
+        img+img{
+            margin-left: 40px;
+        }
+    }
+}
